@@ -40,6 +40,24 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 				deptRepoistory.save(depManagedEntity);
 		
 	}
+	public void affecterDepartementAEntreprise2(int depId, int entrepriseId) {
+		
+				Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();
+				Departement depManagedEntity = deptRepoistory.findById(depId).get();
+				
+				depManagedEntity.setEntreprise(entrepriseManagedEntity);
+				deptRepoistory.save(depManagedEntity);
+		
+	}
+	public void affecterDepartementAEntreprise3(int depId, int entrepriseId) {
+		
+				Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();
+				Departement depManagedEntity = deptRepoistory.findById(depId).get();
+				
+				depManagedEntity.setEntreprise(entrepriseManagedEntity);
+				deptRepoistory.save(depManagedEntity);
+		
+	}
 
 	//new xork
 	
